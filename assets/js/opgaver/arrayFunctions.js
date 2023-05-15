@@ -9,11 +9,13 @@ let myPartArray = ['partElement1', 'partElement2', 'PartElement3'];
 // opgave 1 tilføj element4 til enden myArray
 
 // din kode her...
+myArray.push('element4');
 console.log(myArray);
 
 // opgave 1 fjern element4 igen
 
 // din kode her...
+myArray.pop();
 console.log(myArray);
 
 //.........................................................
@@ -21,11 +23,13 @@ console.log(myArray);
 // opgave 2 tilføj element4 til starten myArray
 
 // din kode her...
+myArray.unshift('element4');
 console.log(myArray);
 
 // opgave 2 fjern element4 igen
 
 // din kode her...
+myArray.shift();
 console.log(myArray);
 
 //.........................................................
@@ -47,6 +51,7 @@ console.log(myFruits);
 // opgave 3 fjern mandarin og fersken igen
 
 // din kode her...
+let = myFruits = ['æble', 'pære', 'mandarin', 'fersken', 'banan', 'appelsin', 'citron']
 myFruits.splice(2, 2);
 
 console.log(myFruits);
@@ -58,7 +63,7 @@ træk blomkål og spidskål ud af arrayen myVegetables
 og ind i en ny array der hedder myCabbage*/
 
 // din kode her...
-
+let = myCabbage = myVegetables.splice(1,2);
 
 
 console.log(myCabbage);
@@ -70,7 +75,7 @@ console.log(myCabbage);
 
 
 // din kode her...
-
+let myYummies = myFruits.concat(myVegetables);
 
 
 console.log(myYummies);
@@ -83,7 +88,7 @@ console.log(myYummies);
 
 
 // din kode her...
-
+myYummies.sort();
 
 
 console.log(myYummies);
@@ -94,7 +99,7 @@ console.log(myYummies);
 
 
 // din kode her...
-
+myYummies.reverse();
 console.log(myYummies);
 
 //.........................................................
@@ -107,7 +112,9 @@ console.log(myYummies);
 let myNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 // din kode her...
+let myNextNumbers = myNumbers.map(num => num + 7);
 console.log(myNextNumbers);
+let myLastNumbers = myNextNumbers.map(num => num * 12);
 console.log(myLastNumbers);
 
 //.........................................................
@@ -115,7 +122,8 @@ console.log(myLastNumbers);
 skriv en kode der kan give os en ny array, udfra myNames, hvor navnet keld ikke findes i.
 */
 let myNames = ['keld', 'søren', 'jens', 'tine', 'keld', 'ib', 'lene', 'keld', 'frederikke', 'line', 'kurt'];
-
+let myNamesWithoutKeld = myNames.filter(name => name !== 'keld');
+console.log(myNamesWithoutKeld);
 
 //.........................................................
 

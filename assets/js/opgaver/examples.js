@@ -7,24 +7,16 @@ myExtrasInput.addEventListener("change", addExtra);
 
 
 
-function addExtra() {
-    /* din map kode her... */
+function addExtra(text) {
+    return text + 'flammer på hjælm'
 }
 
-
+console.log(addExtra);
 
 function updateExtras() {
-
-
-
-
-    /* din map kode her... */
-
-
-}
-
-
-
+    let generatedText = myExtras.map(extra => `<p>${extra}</p>`).join('');
+    document.getElementById('extras').innerHTML = generatedText;
+  }
 
 
 
